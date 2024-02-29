@@ -1,10 +1,35 @@
-# For projects using Nanoc (http://nanoc.ws/)
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Default location for output (needs to match output_dir's value found in nanoc.yaml)
-output/
+# dependencies
+node_modules/
 
-# Temporary file directory
-tmp/nanoc/
+# Expo
+.expo/
+dist/
+web-build/
 
-# Crash Log
-crash.log
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
