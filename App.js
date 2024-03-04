@@ -11,6 +11,11 @@ export default function App() {
   const handleAddTask = () => {
     Keyboard.dismiss();
     console.log(task);
+
+    if(task === null) {
+      return;
+    }
+    
     setTaskItems([...taskItems, task])
     setTask(null);
   }
@@ -69,8 +74,8 @@ const styles = StyleSheet.create({
     alignContent: "center",
   },
   tasksWrapper: {
-    paddingTop: 80,
-    paddingHorizontal: 20,
+    paddingTop: 100,
+    paddingHorizontal: 30,
   },
   sectionTitle: {
     fontSize: 24,
